@@ -176,22 +176,33 @@
       .logo {
         display: flex;
         align-items: center;
-        gap: 10px;
-        font-weight: 700;
+        gap: 8px;
+        font-weight: 600;
         font-size: 18px;
-        letter-spacing: -0.02em;
+        letter-spacing: 0.02em;
+        color: var(--text);
       }
       .logo__mark {
-        width: 26px;
-        height: 26px;
-        border-radius: 7px;
-        background: linear-gradient(140deg, var(--accent), var(--violet));
-        display: grid;
-        place-items: center;
-        color: #08090a;
-        font-weight: 800;
-        font-size: 15px;
-        box-shadow: 0 4px 16px rgba(var(--accent-rgb), 0.35);
+        width: 24px;
+        height: 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text);
+      }
+      .logo__mark svg {
+        width: 24px;
+        height: 24px;
+      }
+      .logo__ver {
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--subtle);
+        padding: 2px 7px;
+        background: var(--surface-2);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        margin-left: 2px;
       }
       .nav__links {
         display: flex;
@@ -1044,8 +1055,16 @@
     <nav class="nav" id="nav">
       <div class="nav__inner">
         <a href="#" class="logo">
-          <span class="logo__mark">K</span>
-          klar
+          <span class="logo__mark"
+            ><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z"
+                clip-rule="evenodd"
+              /></svg
+          ></span>
+          KLAR
+          <span class="logo__ver">v0.9</span>
         </a>
         <div class="nav__links">
           <a href="#features">Features</a>
@@ -1488,8 +1507,15 @@ document.<span class="c-fn">querySelector</span>(<span class="c-str">'#list'</sp
         <div class="foot">
           <div class="foot__brand">
             <a href="#" class="logo">
-              <span class="logo__mark">K</span>
-              klar
+              <span class="logo__mark"
+                ><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z"
+                    clip-rule="evenodd"
+                  /></svg
+              ></span>
+              KLAR
             </a>
             <p>
               The visual CMS for websites that live on GitHub. Click to edit,
