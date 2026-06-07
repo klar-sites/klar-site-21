@@ -1339,15 +1339,33 @@
           </div>
           <div class="vcard">
             <div class="vcard__glow"></div>
-            <div class="canvas" style="background: transparent; padding: 6px">
-              <span class="badge">Live preview</span>
-              <h3 style="font-size: 24px">Built for makers</h3>
-              <p style="margin-top: 14px">Click the headline to rewrite it.</p>
-              <div class="row">
-                <div class="pill solid"></div>
-                <div class="pill"></div>
-              </div>
+            <!-- rich-text formatting toolbar -->
+            <div
+              style="
+                display: inline-flex;
+                gap: 2px;
+                padding: 5px;
+                background: #16171b;
+                border: 1px solid var(--border-strong);
+                border-radius: 9px;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+              "
+            >
+              <span style="width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px; font-weight: 700; color: var(--text); background: var(--surface-2)">B</span>
+              <span style="width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px; font-style: italic; color: var(--muted)">I</span>
+              <span style="width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px; text-decoration: underline; color: var(--muted)">U</span>
+              <span style="width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px; color: var(--muted)">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 1 0-7.07-7.07l-1.71 1.71"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 1 0 7.07 7.07l1.71-1.71"/></svg>
+              </span>
             </div>
+            <p style="font-size: 22px; line-height: 1.45; letter-spacing: -0.02em; color: var(--text); margin-top: 18px">
+              Build something people
+              <span style="background: rgba(var(--accent-rgb), 0.22); border-radius: 4px; padding: 0 4px; box-shadow: 0 0 0 1px rgba(var(--accent-rgb), 0.35)">actually love</span>
+              to use.
+            </p>
+            <p style="font-size: 13px; color: var(--subtle); margin-top: 14px">
+              Select any text to format it — bold, italic, links.
+            </p>
           </div>
         </div>
 
