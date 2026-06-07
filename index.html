@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klar — The visual CMS for sites that live on GitHub</title>
-    <meta
-      name="description"
-      content="Click any text, image, or icon on your live page to edit it. Klar applies the change as clean HTML and commits it straight to your GitHub repo — no build step, no lock-in."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Click any text, image, or icon on your live page to edit it. Klar applies the change as clean HTML and commits it straight to your GitHub repo — no build step, no lock-in.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <style>
       :root {
         --bg: #08090a;
@@ -369,6 +363,15 @@
         opacity: 0.28;
         z-index: -1;
         border-radius: 50%;
+      }
+      .shot__img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--border-strong);
+        border-radius: 16px;
+        box-shadow: 0 40px 120px -20px rgba(0, 0, 0, 0.8),
+          0 0 0 1px rgba(255, 255, 255, 0.02) inset;
       }
       .win {
         border: 1px solid var(--border-strong);
@@ -1055,14 +1058,8 @@
     <nav class="nav" id="nav">
       <div class="nav__inner">
         <a href="#" class="logo">
-          <span class="logo__mark"
-            ><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <path
-                fill-rule="evenodd"
-                d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z"
-                clip-rule="evenodd"
-              /></svg
-          ></span>
+          <span class="logo__mark"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z" clip-rule="evenodd"></path></svg></span>
           KLAR
           <span class="logo__ver">v0.9</span>
         </a>
@@ -1077,18 +1074,10 @@
           <a href="#" class="btn btn-ghost btn-sm">Sign in</a>
           <a href="#start" class="btn btn-primary btn-sm">Start editing</a>
           <button class="nav__burger" aria-label="Menu" id="burger">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            >
-              <line x1="4" y1="7" x2="20" y2="7" />
-              <line x1="4" y1="12" x2="20" y2="12" />
-              <line x1="4" y1="17" x2="20" y2="17" />
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="7" x2="20" y2="7"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="17" x2="20" y2="17"></line>
             </svg>
           </button>
         </div>
@@ -1116,75 +1105,7 @@
         <!-- editor mockup -->
         <div class="shot reveal">
           <div class="shot__glow"></div>
-          <div class="win">
-            <div class="win__bar">
-              <div class="win__dots"><span></span><span></span><span></span></div>
-              <div class="win__addr">
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <rect x="3" y="11" width="18" height="11" rx="2" />
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                </svg>
-                yoursite.com/index.html
-              </div>
-              <span class="win__chip">Save</span>
-              <span class="win__chip" style="background: var(--accent); color: #08090a"
-                >Publish</span
-              >
-            </div>
-            <div class="win__body">
-              <div class="canvas">
-                <span class="badge">Hero section</span>
-                <h3>Design that speaks for itself</h3>
-                <p>
-                  Hover any element to highlight it, click to edit inline. What you
-                  see is exactly what your visitors get.
-                </p>
-                <div class="row">
-                  <div class="pill solid"></div>
-                  <div class="pill"></div>
-                </div>
-                <div class="toolbar">
-                  <b title="Add">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </b>
-                  <b title="Duplicate">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
-                  </b>
-                  <b title="Move up">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6 11 12 5 18 11"/></svg>
-                  </b>
-                  <b title="Delete">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg>
-                  </b>
-                </div>
-              </div>
-              <div class="side">
-                <div class="h">Element</div>
-                <div class="field">
-                  <label>Text</label>
-                  <div class="inp lit"></div>
-                </div>
-                <div class="field">
-                  <label>Link</label>
-                  <div class="inp"></div>
-                </div>
-                <div class="h" style="margin-top: 22px">Fields</div>
-                <div class="field">
-                  <label>Tags</label>
-                  <div class="chips">
-                    <span>Design</span><span>CSS</span><span>+</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img class="shot__img" src="/images/Screenshot 2026-04-04 at 13.49.19.png" alt="The Klar visual editor — clicking a headline to edit it inline, with the structured fields panel on the right." loading="lazy">
         </div>
       </div>
     </header>
@@ -1225,15 +1146,15 @@
             </p>
             <ul class="feat__list">
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Inline rich text</b> with paste sanitization — no messy markup creeps in.</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Container &amp; list editing</b> for cards, grids, and repeating rows.</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Undo / redo</b> across structural changes, kept in sync with the preview.</span>
               </li>
             </ul>
@@ -1263,15 +1184,15 @@
             </p>
             <ul class="feat__list">
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Version history</b> — browse commits and preview any past version.</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Publish to GitHub Pages</b> in one click, on its own branch.</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Shared sections</b> sync a header or footer across every page.</span>
               </li>
             </ul>
@@ -1306,15 +1227,15 @@
             </p>
             <ul class="feat__list">
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Review before you apply</b> — a full before/after diff on every change.</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Design-system aware</b> — reuses your existing classes and tokens.</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Bring your own key</b> — Claude, GPT, and more via your provider.</span>
               </li>
             </ul>
@@ -1376,15 +1297,15 @@
             </p>
             <ul class="feat__list">
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Page types</b> — reusable templates for posts, products, people.</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Tags &amp; vocabularies</b> with faceted filtering out of the box.</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Public content API</b> — read it anywhere, no backend to run.</span>
               </li>
             </ul>
@@ -1402,32 +1323,32 @@
         </div>
         <div class="bento">
           <div class="tile reveal">
-            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></div>
+            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"></path></svg></div>
             <h4>Media library</h4>
             <p>Upload, browse, and swap images from a GitHub-backed folder.</p>
           </div>
           <div class="tile reveal">
-            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg></div>
+            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg></div>
             <h4>Icon picker</h4>
             <p>Search thousands of icons from the Iconify catalog and drop them in.</p>
           </div>
           <div class="tile reveal">
-            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 1l4 4-4 4"></path><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><path d="M7 23l-4-4 4-4"></path><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></div>
             <h4>Shared sections</h4>
             <p>Edit a nav or footer once; sync it across every page in one commit.</p>
           </div>
           <div class="tile reveal">
-            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
             <h4>Members &amp; roles</h4>
             <p>Invite collaborators as admins or editors with email invites.</p>
           </div>
           <div class="tile reveal">
-            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16v16H4z"/><path d="m4 8 8 5 8-5"/></svg></div>
+            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16v16H4z"></path><path d="m4 8 8 5 8-5"></path></svg></div>
             <h4>Form submissions</h4>
             <p>A tokenized endpoint with spam defenses, inbox, and email alerts.</p>
           </div>
           <div class="tile reveal">
-            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01M7 13h10"/></svg></div>
+            <div class="tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M6 8h.01M10 8h.01M14 8h.01M7 13h10"></path></svg></div>
             <h4>Keyboard-first</h4>
             <p>Save, publish, undo, and navigate without leaving the keyboard.</p>
           </div>
@@ -1452,11 +1373,11 @@
             </p>
             <ul class="feat__list">
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Content SDK</b> — <code>list / facets / vocabularies</code> with filtering.</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 <span><b>Users SDK</b> — Google sign-in and per-user key-value storage.</span>
               </li>
             </ul>
@@ -1507,14 +1428,8 @@ document.<span class="c-fn">querySelector</span>(<span class="c-str">'#list'</sp
         <div class="foot">
           <div class="foot__brand">
             <a href="#" class="logo">
-              <span class="logo__mark"
-                ><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z"
-                    clip-rule="evenodd"
-                  /></svg
-              ></span>
+              <span class="logo__mark"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z" clip-rule="evenodd"></path></svg></span>
               KLAR
             </a>
             <p>
